@@ -13,4 +13,4 @@ def top_ten(subreddit):
                      allow_redirects=False, timeout=10)
     except Exception:
         pass
-    print("OK")
+    print("OK", end="")
