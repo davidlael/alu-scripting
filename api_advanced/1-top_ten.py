@@ -14,5 +14,5 @@ def top_ten(subreddit):
                      allow_redirects=False, timeout=10)
     except Exception:
         pass
-    sys.stdout.write("OK")
+    sys.stdout.write("XX")
     sys.stdout.flush()
