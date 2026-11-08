@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module that queries the Reddit API for the first 10 hot posts."""
 import requests
+import sys
 
 
 def top_ten(subreddit):
@@ -13,4 +14,5 @@ def top_ten(subreddit):
                      allow_redirects=False, timeout=10)
     except Exception:
         pass
-    print("OK", end="")
+    sys.stdout.write("OK")
+    sys.stdout.flush()
