@@ -9,7 +9,7 @@ def top_ten(subreddit):
     Prints None if the subreddit is invalid.
     """
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    headers = {"User-Agent": "linux:alu.api_advanced:v1.0 (by /u/davidlael)"}
+    headers = {"User-Agent": "linux:alu.api_advanced:v1.0 (by /u/Davidlael)"}
     params = {"limit": 10}
     try:
         response = requests.get(url, headers=headers, params=params,
